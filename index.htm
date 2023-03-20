@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS & Javascript Effects</title>
+</head>
+<body>
+    <div class="box">
+        <div class="hair"></div>
+        <div class="bottom">
+            <span></span>
+        </div>
+        <div class="head">
+            <div class="neck"></div>
+            <div class="face">
+                <span class="eyes">
+                    <span class="eye"><i></i></span>
+                    <span class="eye"><i></i></span>
+                </span>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="hair"></div>
+        <div class="bottom">
+            <span></span>
+        </div>
+        <div class="head">
+            <div class="neck"></div>
+            <div class="face">
+                <span class="eyes">
+                    <span class="eye"><i></i></span>
+                    <span class="eye"><i></i></span>
+                </span>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function eybal(){
+            let eye = document.querySelectorAll('.eye i')
+            eye.forEach(function(eye){
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                let y = (eye.getBoundingClientRect().left) + (eye.clientHeight / 2);
+                let radan = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (100 / Math.PI) * -1);
+                eye.style.transform 
+            })
+        }
+    </script>
+</body>
+</html>
